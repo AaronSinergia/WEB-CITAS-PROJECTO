@@ -2,33 +2,39 @@
     background-color: rgb(28, 28, 23);
     color: antiquewhite;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 .logo_1 {
     width: 50%;
     display: block;
     margin: auto;
-    box-sizing: border-box;
     clip-path: inset(-30% -30% 25% -30%);
 }
 
 .main_nav {
+    text-align: center;
     list-style: none;
     display: flex;
     margin: auto 100px auto 340px;
+    flex-wrap: wrap;
 }
 
-.item {
+.nav-links {
     background-color: transparent;
     padding: 0.5em;
     grid-template-columns: repeat(4);
+    grid-gap: 1rem;
     margin: -65px 10px 100px 10px;
     border: 3px solid rgba(102, 98, 98, 0.2);
     border-radius: 10em;
 }
 
 .linea_decorativa{
-    display: relative;
+    display: none;
+    /* display: relative; */
     margin: -220px 0px 0px 470px;
     width: 300px;
     height: 300px;
@@ -36,19 +42,3 @@
     clip-path: inset(-20% -20% 45%);
 }
 
-/* @media screen and (min-width: 768px) {
-
-    .main-nav {
-        display: flex;
-        margin-right: 30px;
-    }
-
-    #chkToggle:checked +ul.main-nav {
-        display: flex;
-    }
-
-    .main-nav li {
-        margin: 0;
-        display: flex;
-    }
-} */
