@@ -1,78 +1,42 @@
 * {
-    background-color: rgb(80, 77, 77);
+    background-color: rgb(28, 28, 23);
     color: antiquewhite;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .logo_1 {
-    position: relative;
-    display: flex;
-    margin: -55px 400px 600px;
-    filter: blur(10px);
+    width: 50%;
+    display: block;
+    margin: auto;
     box-sizing: border-box;
-    clip-path: inset(20% 0 30% 0);
-
-}
-
-#nombre_logo {
-    background-color: transparent;
-    font-size: 40px;
-    color: rgb(58, 45, 26);
-    display: flex;
-    margin: -785px 49px 90px 450px;
-    position: relative;
-}
-
-
-.navbar {
-    font-size: 1.5em;
-    background-image: linear-gradient(260deg, rgb(83, 83, 83) 0%, rgb(58, 45, 26) 100%);
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    margin: 20px 20px;
+    clip-path: inset(-30% -30% 25% -30%);
 }
 
 .main_nav {
     list-style: none;
-    display:flex;
-    margin: 0 500px 0 100px;
+    display: flex;
+    margin: auto 100px auto 340px;
+}
+
+.item {
     background-color: transparent;
+    padding: 0.5em;
+    grid-template-columns: repeat(4);
+    margin: -65px 10px 100px 10px;
+    border: 3px solid rgba(102, 98, 98, 0.2);
+    border-radius: 10em;
 }
 
-.nav_links {
-    text-decoration: none;
-    color: rgb(161, 152, 152);
-    background-color: transparent;
-    margin: 90px 90px 70px auto;
-    font-size: 20px;
-    font-weight: bold;
+.linea_decorativa{
+    display: relative;
+    margin: -220px 0px 0px 470px;
+    width: 300px;
+    height: 300px;
+    transform: rotate(-180deg);
+    clip-path: inset(-20% -20% 45%);
 }
 
-.main-nav li { 
-    text-align: center;
-    margin: 15px auto;
-}
-
-.navbar-toggle {
-    position: absolute;
-    top: 200px;
-    right: 30px;
-    cursor: pointer;
-    font-size: 2em;
-    background-color: transparent;
-}
-
-#chkToggle {
-    display: none;
-}
-
-@media screen and (min-width: 768px) {
-    .navbar {
-        display: flex;
-        justify-content: space-between;
-        padding-bottom: 0px;
-        height: 30px;
-        align-items: center;
-    }
+/* @media screen and (min-width: 768px) {
 
     .main-nav {
         display: flex;
@@ -85,14 +49,6 @@
 
     .main-nav li {
         margin: 0;
+        display: flex;
     }
-
-    .nav-links {
-        margin-left: 10px;
-    }
-
-    /* .navbar-toggle {
-        display: none;
-    } */
-
-} 
+} */
