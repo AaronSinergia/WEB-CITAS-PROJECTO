@@ -5,6 +5,9 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    grid-template-columns: repeat(4);
+    grid-template-rows: 200px 200px 200px;
+    grid-gap: -130rem;
 }
 
 .logo_1 {
@@ -28,7 +31,6 @@
     justify-content: center;
     background-color: transparent;
     padding: 0.5em;
-    grid-template-columns: repeat(4);
     margin: -66px 10px 100px 16px;
     border: 3px solid rgba(102, 98, 98, 0.2);
     border-radius: 10em;
@@ -36,7 +38,6 @@
 
 .linea_decorativa{
     justify-content: center;
-    display: none;
     margin: -220px 0px 0px 470px;
     width: 300px;
     height: 300px;
@@ -50,7 +51,13 @@
         justify-content: center;
         background-color: transparent;
         font-size: 0.7em;
-        margin: 20px 10px 0px -200px;
+        margin: 20px 10px 0px -100px;
         border-radius: 7em;
+    }
+    .linea_decorativa {
+        display:block;
+        justify-content: center;
+        background-color: transparent;
+        margin: -170px 115px 0px -20px;
     }
 }
