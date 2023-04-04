@@ -6,14 +6,19 @@
   margin: 0;
   padding: 0;
   grid-gap: -130rem;
+  background-image: url(https://brobible.com/wp-content/uploads/2021/03/heavy-metal-concert.jpg?resize=768,512);
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .logo_1 {
   width: 50%;
   justify-content: center;
   display: grid;
-  margin: auto auto -5% auto;
-  clip-path: inset(auto auto 30% auto);
+  margin: auto auto -4% auto;
+  clip-path: inset(auto 20% auto auto);
+  border: 3px solid rgba(102, 98, 98, 0.2);
+  border-radius: 10em;
 }
 
 .main_nav {
@@ -32,15 +37,16 @@
 }
 
 .linea_decorativa {
+  background-color: transparent;
   justify-content: center;
-  display: block;
+  display: none;
   margin: -7% auto -30% auto;
   width: 300px;
   height: 300px;
   transform: rotate(-180deg);
   clip-path: inset(-20% -20% 45%);
 }
-
+/* 
 @media screen and (max-width: 120px) and (max-width: 1200px) {
   div {
     display: flex;
@@ -56,4 +62,4 @@
     background-color: transparent;
     margin: -170px 115px 0px -20px;
   }
-}
+} */
