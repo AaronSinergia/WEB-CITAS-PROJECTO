@@ -9,17 +9,16 @@
 }
 
 .logo_1 {
-  width: 40%;
+  width: 50%;
   justify-content: center;
   display: grid;
-  margin: auto;
+  margin: auto auto -5% auto;
   clip-path: inset(auto auto 30% auto);
 }
 
 .main_nav {
   text-align: center;
   list-style: none;
-  /* align-items: center; */
   background-color: transparent;
   justify-content: center;
   display: grid;
@@ -35,14 +34,14 @@
 .linea_decorativa {
   justify-content: center;
   display: block;
-  margin: auto;
+  margin: -7% auto -30% auto;
   width: 300px;
   height: 300px;
   transform: rotate(-180deg);
   clip-path: inset(-20% -20% 45%);
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 120px) and (max-width: 1200px) {
   div {
     display: flex;
     justify-content: center;
