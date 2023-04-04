@@ -1,63 +1,60 @@
 * {
-    background-color: rgb(28, 28, 23);
-    color: antiquewhite;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    grid-template-columns: repeat(4);
-    grid-template-rows: 200px 200px 200px;
-    grid-gap: -130rem;
+  background-color: rgb(28, 28, 23);
+  color: antiquewhite;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  grid-gap: -130rem;
 }
 
 .logo_1 {
-    width: 50%;
-    justify-content: center;
-    display:block;
-    margin: auto;
-    clip-path: inset(-30% -30% 25% -30%);
+  width: 40%;
+  justify-content: center;
+  display: grid;
+  margin: auto;
+  clip-path: inset(auto auto 30% auto);
 }
 
 .main_nav {
-    text-align: center;
-    list-style: none;
-    display: flex;
-    margin: auto 100px auto 340px;
-    flex-wrap: wrap;
+  text-align: center;
+  list-style: none;
+  /* align-items: center; */
+  background-color: transparent;
+  justify-content: center;
+  display: grid;
+  margin: auto;
+  grid-template-columns:10% 10% 10% 10%;
 }
 
 .nav-links {
-    display:block;
-    justify-content: center;
-    background-color: transparent;
-    padding: 0.5em;
-    margin: -66px 10px 100px 16px;
-    border: 3px solid rgba(102, 98, 98, 0.2);
-    border-radius: 10em;
+  border: 3px solid rgba(102, 98, 98, 0.2);
+  border-radius: 10em;
 }
 
-.linea_decorativa{
-    justify-content: center;
-    margin: -220px 0px 0px 470px;
-    width: 300px;
-    height: 300px;
-    transform: rotate(-180deg);
-    clip-path: inset(-20% -20% 45%);
+.linea_decorativa {
+  justify-content: center;
+  display: block;
+  margin: auto;
+  width: 300px;
+  height: 300px;
+  transform: rotate(-180deg);
+  clip-path: inset(-20% -20% 45%);
 }
 
 @media screen and (max-width: 640px) {
-    div {
-        display:flex;
-        justify-content: center;
-        background-color: transparent;
-        font-size: 0.7em;
-        margin: 20px 10px 0px -100px;
-        border-radius: 7em;
-    }
-    .linea_decorativa {
-        display:block;
-        justify-content: center;
-        background-color: transparent;
-        margin: -170px 115px 0px -20px;
-    }
+  div {
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    font-size: 0.7em;
+    margin: 20px 10px 0px -100px;
+    border-radius: 7em;
+  }
+  .linea_decorativa {
+    display: block;
+    justify-content: center;
+    background-color: transparent;
+    margin: -170px 115px 0px -20px;
+  }
 }
