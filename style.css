@@ -25,25 +25,22 @@ body {
 }
 
 .main_nav {
-  /* white-space: nowrap; */
-  text-align: center;
   list-style: none;
   display:inline-flex;
-  /* flex-wrap: wrap; */
-  justify-content: center;
-  align-items: center;
   gap: 20px;
 }
 
 .nav_links {
-  background-color: rgb(133, 130, 130);
+  font-size: 20px;
+  background-color: rgb(105, 99, 99, 0.2);
   border: 3px solid rgba(105, 99, 99, 0.2);
   border-radius: 10em;
+  text-align: center;
 }
 
 .valorados {
-  width: 100%;
-  overflow: hidden;
+  width: 100%
+  /* overflow: hidden; */
 }
 
 .fila_valorados {
@@ -52,8 +49,8 @@ body {
 }
 
 .fila_valorados img {
-  width: 12%;
-  height: auto;
+  width: 120px;
+  height: 120px;
   margin-right: 100px; 
 }
 
@@ -83,11 +80,21 @@ body {
   background: rgba(0, 0, 0, 0.3);
 }
 
-.contenedor_anuncios {
-  flex-wrap: wrap;
-  position: fixed;
-  height: 23vh;
+.anuncios { 
+  justify-content: center;
+  display: flex;
+  position:relative;
+  left: 50%;
+  transform: translate(-50%); 
 }
+
+@media screen and (max-width: 640px) {
+  .anuncios {
+    flex-wrap: wrap;
+    height: auto;
+  }
+}
+
 
 /*@media screen and (max-width: 640px) {
   .logo_1 {
