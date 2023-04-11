@@ -1,42 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>ADOPTA UN HEAVY</title>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title>ESCOGE</title>
-</head>
-
-<body>
+  <body>
     <header>
-        <img class="logo_1" src="./images/Proyecto nuevo.png" alt="header_image">
+      <img class="logo_1" src="./images/Proyecto nuevo.png" alt="header_image" height="270">
     </header>
 
     <div>
-        <div>
-            <nav>
-                <ul class="main_nav">
-                    <li class="nav-links"><a href="index.html">👈VOLVER</a></li>
-                    <li class="nav-links"><a href="escoge.html">ESCOGE TU HEAVY</a></li>
-                    <li class="nav-links"><a href="pide.html">PIDE TU HEAVY</a></li>
-                    <li class="nav-links"><a href="sobrenosotros.html">SOBRE NOSOTROS</a></li>
-                </ul>
-            </nav>
+        <nav>
+            <label class="navbar-toggle" id="js-navbar-toggle" for="chkToggle">🤘</label>
+            <a href="#" class="logo"></a>
+            <input type="checkbox" id="chkToggle"/>
+             <ul class="main_nav">
+                <li><a href="index.html" class="nav_links">INICIO</a></li>
+                <li><a href="sobrenosotros.html" class="nav_links">SOBRE NOSOTROS</a></li>
+              </ul>
+          </nav>
+    </div>
+    <div>
+            <div class="fila_valorados">
+                <img class="fotogente" src="./images/5571036570_4f6d0b9329_b.jpg" alt="chicos">
+                <img class="fotogente" src="./images/int111.jpg" alt="chicos">
+                <img class="fotogente" src="./images/b582f47b3e8c413410a244d1e323f2b3.jpg" alt="chicos">
+                <img class="fotogente" src="./images/031ff55502d24a768cfc76d251a65037.jpg" alt="chicos">
+                <img class="fotogente" src="./images/fa851b5984d61a8f20f067eb22a05d31.jpg" alt="chicos">
+                <img class="fotogente" src="./images/mdidusvp70381.jpg" alt="chicos">
+                <img class="fotogente" src="./images/5571036570_4f6d0b9329_b.jpg" alt="chicos">
         </div>
-        <div>
-            <img class="linea_decorativa" src="./images/decorative_line.png" alt="decorative_line">
+    <div class="cuadrado_main">
+        <div class="cuadrado_descripcion" class="main">
+          <p class="presentacion">Conoce gente con gustos afines, de una forma mucho mas sencilla.</p>
+          <p class="presentacion">Nuestro valor reside en el respeto y el buen royo. Si no te sientes a gusto con algún usuario, puedes escribirnos a través del formulario de contacto en la sección: <a href="sobrenosotros.html">SOBRE NOSOTROS</a>. <br><br></p>
+          <p><q><cite>Desde que entré, sólo he conocido gente respetuosa. Llevo 2 semanas, y no he parado de hacer planes!! - <strong>Marta Aguilera</strong></cite></q></p>
+          <p><q><cite>No tengo demasiados amigos en la ciudad, y desde que entré ya he ido a varios conciertos con gente nueva, y todo ok!! - <strong>Julio Cesar</strong></cite></q></p>
+          <p><q><cite>Dejé a mi mujer culturista por una chica de esta web. Es zaragozana... Se podría decir que mas vale maña que fuerza. - <strong>Matías Prats</strong></cite></q></p>
         </div>
     </div>
-<div>
-    <main class="heavys_disponibles"></main>
-    <aside class="heavys_mejor_valorados"></aside>
-    <aside class="anuncios_conciertos"></aside>
-</div>
+        <div class="contenedor_anuncios">
+            <a class="anuncios" href="https://endernity.es" target="_blank" rel="noopener">
+                <img src="https://www.rafabasa.com/publicidad/2023/banner_endernity03_04_23.gif" alt="ENDERNITY - Album/Gira" height="216">
+                 <img src="https://www.rafabasa.com/publicidad/2023/banner_road_runner02_03_23.gif" alt="Rodrunner" height="216">
+            </a>
+        </div>
+    </div>
 
-<footer class="copyright"></footer>
-
-</body>
-
+    <footer class="copyright">© Todos los derechos reservados - 2023</footer>
+  </body>
 </html>

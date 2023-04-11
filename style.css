@@ -3,6 +3,7 @@
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   box-sizing: border-box;
   text-decoration: none;
+  padding: 0;
 }
 
 body {
@@ -22,53 +23,60 @@ body {
   filter: grayscale(100%);
   border: 10px solid rgba(102, 98, 98, 0.2);
   border-radius: 50em;
-  filter:opacity(85%)
+  filter:opacity(90%);
 }
 
-/* Esta parte está en proceso para hacer menú flotante desplegable */
 .main_nav {
-  display: inline-block;
-  position: relative;
-}
-
-div:hover {
-  font-size: 18px;
-  background-color: rgba(61, 60, 60, 0.2);
-  border: 3px solid rgba(63, 60, 60, 0.2);
-  border-radius: 10em;
-  text-align: center;
-}
-/* Esta parte está en proceso para hacer menú flotante desplegable */
-
-/* Esta parte es buena
-.main_nav {
-  list-style: none;
-  gap: 19px;
-  justify-content: center;
-  display: flex;
-  position:relative;
-  padding: 0;
+  list-style-type: none;
+  display: none;
+  position: fixed;
+  top: 10px;
+  right: 55px;
 }
 
 .nav_links {
-  font-size: 18px;
-  background-color: rgba(61, 60, 60, 0.2);
-  border: 3px solid rgba(63, 60, 60, 0.2);
+  font-size: 15px;
+  background-color: rgba(212, 208, 208, 0.2);
+  border: 5px solid rgba(114, 78, 78, 0.2);
   border-radius: 10em;
+}
+
+.main_nav li {
   text-align: center;
-} 
-*/
+  margin: 15px auto;
+}
+
+.navbar-toggle {
+  position: fixed;
+  top: 35px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 3em;
+  filter: grayscale(100%);
+}
+
+#chkToggle {
+  display: none;
+}
+
+#chkToggle:checked+ul.main_nav {
+  display: block;
+}
 
 .fila_valorados {
-  width: 100%;
+  position: relative;
+  z-index: 1;
   display: flex;
   animation: slide 15s linear infinite; 
+  filter: blur(3px);
+  overflow: hidden;
+  max-height: 100px;
 }
 
 .fila_valorados img {
-  width: 120px;
-  height: 120px;
-  margin-right: 100px; 
+  margin-right: 60px;
+  object-fit: cover;
+  max-width: 90px;
 }
 
 @keyframes slide {
@@ -80,15 +88,66 @@ div:hover {
   }
 }
 
+.premium {
+  background-color: rgba(212, 208, 208, 0.493);
+  color: rgb(202, 11, 11);
+  text-transform: uppercase;
+  font-style:oblique;
+  font-weight:bolder;
+  font-size: 20px;
+  z-index: 2;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  margin: 15px auto;
+  text-align: center;
+}
+
 .cuadrado_main {
   display: flex;
   margin: 10px auto 20px auto;
-  background: rgba(0, 0, 0, 0.411);
+  background: rgba(0, 0, 0, 0.5);
 }
 
-.cuadrado_descripcion {
+.cuadrado_sobrenosotros {
+  display: grid;
+  position:relative;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1em; 
+  border: 2px solid rgb(143, 139, 138);
   text-align: center;
+  padding: 15px;
 }
+
+.rrss_image {
+  width: 15%;
+}
+
+.nosotros{
+  border: 2px solid rgb(82, 79, 78);
+}
+
+.filosofia {
+  border: 2px solid rgb(82, 79, 78);
+}
+
+.rrss_container {
+  display: grid;
+  grid-template-columns: repeat(1fr);
+  grid-row-gap: 1rem;
+  grid-column-gap: 1rem;
+  border: 2px solid rgb(82, 79, 78);
+  margin: 0 auto;
+}
+
+.rrss_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto auto 10px auto;
+}
+
 
 cite {
   font-size: 15px;
@@ -107,7 +166,7 @@ cite {
   text-align: center;
 }
 
-@media screen and (max-width: 640px) {
+/*@media screen and (max-width: 300px) {
   .anuncios {
     flex-wrap: wrap;
     height: auto;
@@ -115,10 +174,10 @@ cite {
 }
 
 
-/*@media screen and (max-width: 640px) {
+@media screen and (max-width: 640px) {
   .logo_1 {
     width: 90%;
-/*    margin: -19% auto -7% auto; modificar margin sin porcentages
+    margin: -19% auto -7% auto; modificar margin sin porcentages
     clip-path: inset(36% 6% 15% 6%);
     border: 25px solid rgba(102, 98, 98, 0.2);
     border-radius: 60em;
@@ -130,15 +189,16 @@ cite {
   }
   
   .nav_links {
-  margin: 2% auto;  /* modificar margin sin porcentages
+  margin: 2% auto;   modificar margin sin porcentages
     padding: 10px;
     border: 2px solid rgba(105, 99, 99, 0.2);
-  } */
+  } 
 
-/* @media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
 Estilos para pantallas de 768 a 1024 píxeles de ancho 
-} */
+} 
 
-/* @media (min-width: 1025px) {
+@media (min-width: 1025px) {
 Estilos para pantallas de más de 1024 píxeles de ancho
-} */
+}
+ } */
