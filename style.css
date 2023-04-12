@@ -24,6 +24,7 @@ body {
   border: 10px solid rgba(102, 98, 98, 0.2);
   border-radius: 50em;
   filter:opacity(90%);
+  height: 20vh;
 }
 
 .main_nav {
@@ -91,16 +92,24 @@ body {
 
 .premium {
   background-color: rgba(212, 208, 208, 0.493);
+  font-size: 20px;
+  z-index: 2;
+  position: relative;
+  margin: 10px auto;
+  text-align: center;
+}
+
+.premium_container {
   color: rgb(202, 11, 11);
+  background-color: rgba(212, 208, 208, 0.493);
   text-transform: uppercase;
   font-style: oblique;
   font-weight: bolder;
-  font-size: 20px;
-  z-index: 2;
+  width: 400px;
   position: absolute;
   left: 50%;
+  top: 50%;
   transform: translate(-50%);
-  margin: 15px auto;
 }
 
 .cuadrado_main {
@@ -122,13 +131,16 @@ body {
 }
 
 .titulo_heavys_zona {
+  position: absolute;
+  margin: 20px 2px;
   display: grid;
-  grid-template-rows: 30px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
   border: 2px solid rgba(82, 79, 78, 0.363);
   background-color: rgba(143, 139, 138, 0.253);
-  text-align: center;
-  margin: 15px auto auto;
   color: rgb(175, 179, 179);
+  z-index: 3;
+  white-space: nowrap;
 }
 
 .cuadrado_descripcion_escoge {
@@ -136,6 +148,7 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
   padding: 1px;
   margin-bottom: 40px;
+  margin-top: 40px;
 }
 
 .fotos_heavys > img {
@@ -154,24 +167,31 @@ body {
   align-items: center;
 }
 
-h1 {
-  margin: 20px 20px 300px;
+button {
+  margin: 42vw auto auto 6vw;
   color: rgb(255, 255, 255);
-  background-color: rgb(182, 161, 161);
+  background-color: rgb(109, 204, 54);
   text-align: center;
+  padding: 5px 10px;
+  font-size: 15px;
+  cursor: pointer;
+  display: inline-block;
+  position: fixed;
 }
 
 h2 {
-  margin: 20px auto auto 35px;
+  margin: 5vw auto auto 5vw;
   color: rgb(255, 255, 255);
-  background-color: rgb(182, 161, 161);
+  background-color: rgba(105, 103, 103, 0.651);
   text-align: center;
+  position: fixed;
 }
 
 h3 {
-  margin: 200px auto auto 8px;
-  color: rgb(78, 70, 64);
-  background-color: rgb(182, 161, 161);
+  margin: 30vw auto auto 5vw;
+  color: rgb(255, 255, 255);
+  background-color: rgba(105, 103, 103, 0.651);
+  position: fixed;
 }
 
 .fotos_heavys:hover > .texto_oculto {
@@ -200,6 +220,7 @@ h3 {
 
 .titulo_nosotros {
   font-size: 20px;
+  text-align: center;
 }
 
 .rrss_container {
@@ -232,7 +253,7 @@ cite {
 }
 
 .copyright {
-  margin: 10px auto auto auto;
+  margin: 10px 50px auto 60px;
   text-align: center;
 }
 
