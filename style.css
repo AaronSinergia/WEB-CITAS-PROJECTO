@@ -131,11 +131,10 @@ body {
 }
 
 .titulo_heavys_zona {
+  margin: 0;
   position: absolute;
-  margin: 20px 2px;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
+  top: 300px;
+  display: flex;
   border: 2px solid rgba(82, 79, 78, 0.363);
   background-color: rgba(143, 139, 138, 0.253);
   color: rgb(175, 179, 179);
@@ -148,7 +147,7 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
   padding: 1px;
   margin-bottom: 40px;
-  margin-top: 40px;
+  margin-top: 35px;
 }
 
 .fotos_heavys > img {
