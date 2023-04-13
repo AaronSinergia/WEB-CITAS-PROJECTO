@@ -23,7 +23,7 @@ body {
   filter: grayscale(100%);
   border: 10px solid rgba(102, 98, 98, 0.2);
   border-radius: 50em;
-  filter:opacity(90%);
+  filter: opacity(90%);
   height: 20vh;
 }
 
@@ -61,7 +61,7 @@ body {
   display: none;
 }
 
-#chkToggle:checked+ul.main_nav {
+#chkToggle:checked + ul.main_nav {
   display: block;
 }
 
@@ -69,7 +69,7 @@ body {
   position: relative;
   z-index: 1;
   display: flex;
-  animation: slide 15s linear infinite; 
+  animation: slide 15s linear infinite;
   filter: blur(3px);
   overflow: hidden;
   max-height: 100px;
@@ -125,7 +125,7 @@ body {
   display: grid;
   position: relative;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 1em;  
+  grid-gap: 1em;
   text-align: center;
   padding: 15px;
 }
@@ -139,7 +139,7 @@ body {
   margin: 0;
   bottom: 578px;
   left: 50%;
-  transform: translate(-50%); 
+  transform: translate(-50%);
   background-color: rgba(105, 103, 103, 0.651);
   white-space: nowrap;
 }
@@ -208,10 +208,10 @@ h3 {
 
 .rrss_image {
   width: 40%;
-  filter:contrast(70%);
+  filter: contrast(70%);
 }
 
-.nosotros{
+.nosotros {
   border: 2px solid rgb(82, 79, 78);
 }
 
@@ -245,12 +245,12 @@ cite {
   font-size: 15px;
 }
 
-.anuncios { 
+.anuncios {
   justify-content: center;
   display: flex;
-  position: relative; 
+  position: relative;
   left: 50%;
-  transform: translate(-50%); 
+  transform: translate(-50%);
 }
 
 .copyright {
@@ -260,11 +260,7 @@ cite {
 
 /* MEDIA QUERY */
 
-@media screen and (min-width: 1921px) {}
-@media screen and (min-width: 1441px) and (max-width: 1920px) {}
-@media screen and (min-width: 1025px) and (max-width: 1440px) {}
-@media screen and (min-width: 721px) and (max-width: 1024px) {}
-@media screen and (max-width: 720px) {
+@media screen and (min-width: 1080px) {
   * {
     color: rgb(218, 215, 211);
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
@@ -272,24 +268,25 @@ cite {
     text-decoration: none;
     padding: 0;
   }
-  
+
   body {
     background-image: url(https://brobible.com/wp-content/uploads/2021/03/heavy-metal-concert.jpg?resize=768,512);
     background-attachment: fixed;
     background-size: cover;
   }
-  
+
   .logo_1 {
-    width: 100%;
     justify-content: center;
-    display: grid;
+    display: flex;
     filter: grayscale(100%);
     border: 10px solid rgba(102, 98, 98, 0.2);
     border-radius: 50em;
-    filter:opacity(90%);
-    height: 20vh;
+    filter: opacity(90%);
+    height: 25vh;
+    max-width: 90%;
+    margin: 0 auto;
   }
-  
+
   .main_nav {
     list-style-type: none;
     display: none;
@@ -297,19 +294,19 @@ cite {
     top: 10px;
     right: 55px;
   }
-  
+
   .nav_links {
     font-size: 15px;
     background-color: rgba(212, 208, 208, 0.2);
     border: 5px solid rgba(114, 78, 78, 0.2);
     border-radius: 10em;
   }
-  
+
   .main_nav li {
     text-align: center;
     margin: 15px auto;
   }
-  
+
   .navbar-toggle {
     position: fixed;
     top: 35px;
@@ -319,31 +316,31 @@ cite {
     filter: grayscale(100%);
     z-index: 3;
   }
-  
+
   #chkToggle {
     display: none;
   }
-  
-  #chkToggle:checked+ul.main_nav {
+
+  #chkToggle:checked + ul.main_nav {
     display: block;
   }
-  
+
   .fila_valorados {
     position: relative;
     z-index: 1;
     display: flex;
-    animation: slide 15s linear infinite; 
+    animation: slide 15s linear infinite;
     filter: blur(3px);
     overflow: hidden;
     max-height: 100px;
   }
-  
+
   .fila_valorados img {
     margin-right: 60px;
     object-fit: cover;
     max-width: 90px;
   }
-  
+
   @keyframes slide {
     0% {
       transform: translateX(0);
@@ -352,7 +349,7 @@ cite {
       transform: translateX(-100%);
     }
   }
-  
+
   .premium {
     background-color: rgba(212, 208, 208, 0.493);
     font-size: 20px;
@@ -361,7 +358,7 @@ cite {
     margin: 10px auto;
     text-align: center;
   }
-  
+
   .premium_container {
     color: rgb(202, 11, 11);
     background-color: rgba(212, 208, 208, 0.493);
@@ -374,7 +371,7 @@ cite {
     top: 50%;
     transform: translate(-50%);
   }
-  
+
   .cuadrado_main {
     display: flex;
     margin: 10px auto 20px auto;
@@ -383,16 +380,16 @@ cite {
     padding: 5px;
     text-align: center;
   }
-  
+
   .cuadrado_sobrenosotros {
     display: grid;
     position: relative;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 1em;  
+    grid-gap: 1em;
     text-align: center;
     padding: 15px;
   }
-  
+
   .titulo_heavys_zona {
     display: block;
     position: absolute;
@@ -400,13 +397,13 @@ cite {
     color: rgb(175, 179, 179);
     font-size: 25px;
     margin: 0;
-    bottom: 578px;
+    bottom: 540px;
     left: 50%;
-    transform: translate(-50%); 
+    transform: translate(-50%);
     background-color: rgba(105, 103, 103, 0.651);
     white-space: nowrap;
   }
-  
+
   .cuadrado_descripcion_escoge {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -414,7 +411,7 @@ cite {
     margin-bottom: 40px;
     margin-top: 35px;
   }
-  
+
   .fotos_heavys > img {
     width: 100%;
     height: 100%;
@@ -422,7 +419,7 @@ cite {
     border: 2px solid rgb(82, 79, 78);
     position: relative;
   }
-  
+
   .texto_oculto {
     display: none;
     position: absolute;
@@ -430,7 +427,7 @@ cite {
     transition: opacity 0.3s ease-in-out;
     align-items: center;
   }
-  
+
   button {
     margin: 42vw auto auto 6vw;
     color: rgb(255, 255, 255);
@@ -442,7 +439,7 @@ cite {
     display: inline-block;
     position: fixed;
   }
-  
+
   h2 {
     margin: 5vw auto auto 5vw;
     color: rgb(255, 255, 255);
@@ -450,14 +447,14 @@ cite {
     text-align: center;
     position: fixed;
   }
-  
+
   h3 {
     margin: 30vw auto auto 5vw;
     color: rgb(255, 255, 255);
     background-color: rgba(105, 103, 103, 0.651);
     position: fixed;
   }
-  
+
   .fotos_heavys:hover > .texto_oculto {
     display: grid;
     filter: brightness(60%);
@@ -468,25 +465,25 @@ cite {
     padding: 10px;
     border-radius: 30%;
   }
-  
+
   .rrss_image {
     width: 40%;
-    filter:contrast(70%);
+    filter: contrast(70%);
   }
-  
-  .nosotros{
+
+  .nosotros {
     border: 2px solid rgb(82, 79, 78);
   }
-  
+
   .filosofia {
     border: 2px solid rgb(82, 79, 78);
   }
-  
+
   .titulo_nosotros {
     font-size: 20px;
     text-align: center;
   }
-  
+
   .rrss_container {
     display: grid;
     grid-template-columns: repeat(1fr);
@@ -495,7 +492,7 @@ cite {
     border: 2px solid rgb(82, 79, 78);
     margin: 0 auto;
   }
-  
+
   .rrss_text {
     display: flex;
     flex-direction: column;
@@ -503,19 +500,1344 @@ cite {
     align-items: center;
     margin: auto auto 10px auto;
   }
-  
+
   cite {
     font-size: 15px;
   }
-  
-  .anuncios { 
+
+  .anuncios {
     justify-content: center;
     display: flex;
-    position: relative; 
+    position: relative;
     left: 50%;
-    transform: translate(-50%); 
+    transform: translate(-50%);
   }
-  
+
+  .contenedor_anuncios2 {
+    display: none;
+  }
+
+  .copyright {
+    margin: 10px 50px auto 60px;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 871px) and (max-width: 1080px) {
+  * {
+    color: rgb(218, 215, 211);
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    padding: 0;
+  }
+
+  body {
+    background-image: url(https://brobible.com/wp-content/uploads/2021/03/heavy-metal-concert.jpg?resize=768,512);
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+  .logo_1 {
+    justify-content: center;
+    display: flex;
+    filter: grayscale(100%);
+    border: 10px solid rgba(102, 98, 98, 0.2);
+    border-radius: 50em;
+    filter: opacity(90%);
+    height: 25vh;
+    max-width: 60%;
+    margin: 0 auto;
+  }
+
+  .main_nav {
+    list-style-type: none;
+    display: none;
+    position: fixed;
+    top: 10px;
+    right: 55px;
+  }
+
+  .nav_links {
+    font-size: 15px;
+    background-color: rgba(212, 208, 208, 0.2);
+    border: 5px solid rgba(114, 78, 78, 0.2);
+    border-radius: 10em;
+  }
+
+  .main_nav li {
+    text-align: center;
+    margin: 15px auto;
+  }
+
+  .navbar-toggle {
+    position: fixed;
+    top: 35px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 3em;
+    filter: grayscale(100%);
+    z-index: 3;
+  }
+
+  #chkToggle {
+    display: none;
+  }
+
+  #chkToggle:checked + ul.main_nav {
+    display: block;
+  }
+
+  .fila_valorados {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    animation: slide 15s linear infinite;
+    filter: blur(3px);
+    overflow: hidden;
+    max-height: 100px;
+  }
+
+  .fila_valorados img {
+    margin-right: 60px;
+    object-fit: cover;
+    max-width: 90px;
+  }
+
+  @keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  .premium {
+    background-color: rgba(212, 208, 208, 0.493);
+    font-size: 20px;
+    z-index: 2;
+    position: relative;
+    margin: 10px auto;
+    text-align: center;
+  }
+
+  .premium_container {
+    color: rgb(202, 11, 11);
+    background-color: rgba(212, 208, 208, 0.493);
+    text-transform: uppercase;
+    font-style: oblique;
+    font-weight: bolder;
+    width: 400px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%);
+  }
+
+  .cuadrado_main {
+    display: flex;
+    margin: 10px auto 20px auto;
+    background: rgba(0, 0, 0, 0.5);
+    border: 2px solid rgb(82, 79, 78);
+    padding: 5px;
+    text-align: center;
+    width: 80%;
+  }
+
+  .cuadrado_sobrenosotros {
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .titulo_heavys_zona {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    color: rgb(175, 179, 179);
+    font-size: 25px;
+    margin: 0;
+    bottom: 540px;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: rgba(105, 103, 103, 0.651);
+    white-space: nowrap;
+  }
+
+  .cuadrado_descripcion_escoge {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 1px;
+    width: 60%;
+    padding: 40px;
+    margin-top: 5px;
+    margin-bottom: 1px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .fotos_heavys > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 2px solid rgb(82, 79, 78);
+    position: relative;
+  }
+
+  .texto_oculto {
+    display: none;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    align-items: center;
+  }
+
+  button {
+    margin: 26vw auto auto 1vw;
+    color: rgb(255, 255, 255);
+    background-color: rgb(109, 204, 54);
+    text-align: center;
+    padding: 5px 10px;
+    font-size: 15px;
+    cursor: pointer;
+    display: inline-block;
+    position: fixed;
+  }
+
+  h2 {
+    margin: 2vw auto auto 3vw;
+    color: rgb(255, 255, 255);
+    background-color: rgba(105, 103, 103, 0.651);
+    text-align: center;
+    position: fixed;
+  }
+
+  h3 {
+    margin: 17vw auto auto 1vw;
+    color: rgb(255, 255, 255);
+    background-color: rgba(105, 103, 103, 0.651);
+    position: fixed;
+  }
+
+  .fotos_heavys:hover > .texto_oculto {
+    display: grid;
+    filter: brightness(60%);
+    z-index: 1;
+    opacity: 1;
+    grid-template-columns: 10vh;
+    grid-template-rows: 1fr;
+    padding: 10px;
+    border-radius: 30%;
+  }
+
+  .rrss_image {
+    width: 40%;
+    filter: contrast(70%);
+  }
+
+  .nosotros {
+    border: 2px solid rgb(82, 79, 78);
+  }
+
+  .filosofia {
+    border: 2px solid rgb(82, 79, 78);
+  }
+
+  .titulo_nosotros {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .rrss_container {
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    grid-row-gap: 1rem;
+    grid-column-gap: 1rem;
+    border: 2px solid rgb(82, 79, 78);
+    margin: 0 auto;
+  }
+
+  .rrss_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto auto 10px auto;
+  }
+
+  cite {
+    font-size: 15px;
+  }
+
+  .contenedor_anuncios {
+    display: none;
+  }
+
+  .img1 {
+    position: fixed;
+    bottom: 250px;
+    left: 20px;
+  }
+
+  .img2 {
+    position: fixed;
+    bottom: 250px;
+    right: 20px;
+  }
+
+  .copyright {
+    margin: auto 50px auto 60px;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 721px) and (max-width: 870px) {
+  * {
+    color: rgb(218, 215, 211);
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    padding: 0;
+  }
+
+  body {
+    background-image: url(https://brobible.com/wp-content/uploads/2021/03/heavy-metal-concert.jpg?resize=768,512);
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+  .logo_1 {
+    justify-content: center;
+    display: flex;
+    filter: grayscale(100%);
+    border: 10px solid rgba(102, 98, 98, 0.2);
+    border-radius: 50em;
+    filter: opacity(90%);
+    height: 25vh;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .main_nav {
+    list-style-type: none;
+    display: none;
+    position: fixed;
+    top: 10px;
+    right: 55px;
+  }
+
+  .nav_links {
+    font-size: 15px;
+    background-color: rgba(212, 208, 208, 0.2);
+    border: 5px solid rgba(114, 78, 78, 0.2);
+    border-radius: 10em;
+  }
+
+  .main_nav li {
+    text-align: center;
+    margin: 15px auto;
+  }
+
+  .navbar-toggle {
+    position: fixed;
+    top: 35px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 3em;
+    filter: grayscale(100%);
+    z-index: 3;
+  }
+
+  #chkToggle {
+    display: none;
+  }
+
+  #chkToggle:checked + ul.main_nav {
+    display: block;
+  }
+
+  .fila_valorados {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    animation: slide 15s linear infinite;
+    filter: blur(3px);
+    overflow: hidden;
+    max-height: 100px;
+  }
+
+  .fila_valorados img {
+    margin-right: 60px;
+    object-fit: cover;
+    max-width: 90px;
+  }
+
+  @keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  .premium {
+    background-color: rgba(212, 208, 208, 0.493);
+    font-size: 20px;
+    z-index: 2;
+    position: relative;
+    margin: 10px auto;
+    text-align: center;
+  }
+
+  .premium_container {
+    color: rgb(202, 11, 11);
+    background-color: rgba(212, 208, 208, 0.493);
+    text-transform: uppercase;
+    font-style: oblique;
+    font-weight: bolder;
+    width: 400px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%);
+  }
+
+  .cuadrado_main {
+    display: flex;
+    margin: 10px auto 20px auto;
+    background: rgba(0, 0, 0, 0.5);
+    border: 2px solid rgb(82, 79, 78);
+    padding: 5px;
+    text-align: center;
+    width: 80%;
+  }
+
+  .cuadrado_sobrenosotros {
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .titulo_heavys_zona {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    color: rgb(175, 179, 179);
+    font-size: 25px;
+    margin: 0;
+    bottom: 540px;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: rgba(105, 103, 103, 0.651);
+    white-space: nowrap;
+  }
+
+  .cuadrado_descripcion_escoge {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 1px;
+    margin-bottom: 40px;
+    margin-top: 35px;
+    width: 100%;
+  }
+
+  .fotos_heavys > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 2px solid rgb(82, 79, 78);
+    position: relative;
+  }
+
+  .texto_oculto {
+    display: none;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    align-items: center;
+  }
+
+  button {
+    margin: 58vw auto auto 2vw;
+    color: rgb(255, 255, 255);
+    background-color: rgb(109, 204, 54);
+    text-align: center;
+    padding: 5px 10px;
+    font-size: 15px;
+    cursor: pointer;
+    display: inline-block;
+    position: fixed;
+  }
+
+  h2 {
+    margin: 5vw auto auto 7vw;
+    color: rgb(255, 255, 255);
+    background-color: rgba(105, 103, 103, 0.651);
+    text-align: center;
+    position: fixed;
+  }
+
+  h3 {
+    margin: 35vw auto auto 1vw;
+    color: rgb(255, 255, 255);
+    background-color: rgba(105, 103, 103, 0.651);
+    position: fixed;
+  }
+
+  .fotos_heavys:hover > .texto_oculto {
+    display: grid;
+    filter: brightness(60%);
+    z-index: 1;
+    opacity: 1;
+    grid-template-columns: 10vh;
+    grid-template-rows: 1fr;
+    padding: 10px;
+    border-radius: 30%;
+  }
+
+  .rrss_image {
+    width: 40%;
+    filter: contrast(70%);
+  }
+
+  .nosotros {
+    border: 2px solid rgb(82, 79, 78);
+  }
+
+  .filosofia {
+    border: 2px solid rgb(82, 79, 78);
+  }
+
+  .titulo_nosotros {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .rrss_container {
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    grid-row-gap: 1rem;
+    grid-column-gap: 1rem;
+    border: 2px solid rgb(82, 79, 78);
+    margin: 0 auto;
+  }
+
+  .rrss_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto auto 10px auto;
+  }
+
+  cite {
+    font-size: 15px;
+  }
+
+  .anuncios {
+    justify-content: center;
+    display: flex;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  .contenedor_anuncios2 {
+    display: none;
+  }
+
+  .copyright {
+    margin: 10px 50px auto 60px;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 720px) {
+  * {
+    color: rgb(218, 215, 211);
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    padding: 0;
+  }
+
+  body {
+    background-image: url(https://brobible.com/wp-content/uploads/2021/03/heavy-metal-concert.jpg?resize=768,512);
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+  .logo_1 {
+    justify-content: center;
+    display: flex;
+    filter: grayscale(100%);
+    border: 10px solid rgba(102, 98, 98, 0.2);
+    border-radius: 50em;
+    filter: opacity(90%);
+    height: 25vh;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .main_nav {
+    list-style-type: none;
+    display: none;
+    position: fixed;
+    top: 10px;
+    right: 55px;
+  }
+
+  .nav_links {
+    font-size: 15px;
+    background-color: rgba(212, 208, 208, 0.2);
+    border: 5px solid rgba(114, 78, 78, 0.2);
+    border-radius: 10em;
+  }
+
+  .main_nav li {
+    text-align: center;
+    margin: 15px auto;
+  }
+
+  .navbar-toggle {
+    position: fixed;
+    top: 35px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 3em;
+    filter: grayscale(100%);
+    z-index: 3;
+  }
+
+  #chkToggle {
+    display: none;
+  }
+
+  #chkToggle:checked + ul.main_nav {
+    display: block;
+  }
+
+  .fila_valorados {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    animation: slide 15s linear infinite;
+    filter: blur(3px);
+    overflow: hidden;
+    max-height: 100px;
+  }
+
+  .fila_valorados img {
+    margin-right: 60px;
+    object-fit: cover;
+    max-width: 90px;
+  }
+
+  @keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  .premium {
+    background-color: rgba(212, 208, 208, 0.493);
+    font-size: 20px;
+    z-index: 2;
+    position: relative;
+    margin: 10px auto;
+    text-align: center;
+  }
+
+  .premium_container {
+    color: rgb(202, 11, 11);
+    background-color: rgba(212, 208, 208, 0.493);
+    text-transform: uppercase;
+    font-style: oblique;
+    font-weight: bolder;
+    width: 400px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%);
+  }
+
+  .cuadrado_main {
+    display: flex;
+    margin: 10px auto 20px auto;
+    background: rgba(0, 0, 0, 0.5);
+    border: 2px solid rgb(82, 79, 78);
+    padding: 5px;
+    text-align: center;
+  }
+
+  .cuadrado_sobrenosotros {
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .titulo_heavys_zona {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    color: rgb(175, 179, 179);
+    font-size: 25px;
+    margin: 0;
+    bottom: 540px;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: rgba(105, 103, 103, 0.651);
+    white-space: nowrap;
+  }
+
+  .cuadrado_descripcion_escoge {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 1px;
+    margin-bottom: 40px;
+    margin-top: 35px;
+  }
+
+  .fotos_heavys > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 2px solid rgb(82, 79, 78);
+    position: relative;
+  }
+
+  .texto_oculto {
+    display: none;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    align-items: center;
+  }
+
+  button {
+    margin: 42vw auto auto 6vw;
+    color: rgb(255, 255, 255);
+    background-color: rgb(109, 204, 54);
+    text-align: center;
+    padding: 5px 10px;
+    font-size: 15px;
+    cursor: pointer;
+    display: inline-block;
+    position: fixed;
+  }
+
+  h2 {
+    margin: 5vw auto auto 5vw;
+    color: rgb(255, 255, 255);
+    background-color: rgba(105, 103, 103, 0.651);
+    text-align: center;
+    position: fixed;
+  }
+
+  h3 {
+    margin: 30vw auto auto 5vw;
+    color: rgb(255, 255, 255);
+    background-color: rgba(105, 103, 103, 0.651);
+    position: fixed;
+  }
+
+  .fotos_heavys:hover > .texto_oculto {
+    display: grid;
+    filter: brightness(60%);
+    z-index: 1;
+    opacity: 1;
+    grid-template-columns: 10vh;
+    grid-template-rows: 1fr;
+    padding: 10px;
+    border-radius: 30%;
+  }
+
+  .rrss_image {
+    width: 40%;
+    filter: contrast(70%);
+  }
+
+  .nosotros {
+    border: 2px solid rgb(82, 79, 78);
+  }
+
+  .filosofia {
+    border: 2px solid rgb(82, 79, 78);
+  }
+
+  .titulo_nosotros {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .rrss_container {
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    grid-row-gap: 1rem;
+    grid-column-gap: 1rem;
+    border: 2px solid rgb(82, 79, 78);
+    margin: 0 auto;
+  }
+
+  .rrss_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto auto 10px auto;
+  }
+
+  cite {
+    font-size: 15px;
+  }
+
+  .anuncios {
+    justify-content: center;
+    display: flex;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  .contenedor_anuncios2 {
+    display: none;
+  }
+
+  .copyright {
+    margin: 10px 50px auto 60px;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 600px) {
+  * {
+    color: rgb(218, 215, 211);
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    padding: 0;
+  }
+
+  body {
+    background-image: url(https://brobible.com/wp-content/uploads/2021/03/heavy-metal-concert.jpg?resize=768,512);
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+  .logo_1 {
+    justify-content: center;
+    display: grid;
+    filter: grayscale(100%);
+    border: 10px solid rgba(102, 98, 98, 0.2);
+    border-radius: 50em;
+    filter: opacity(90%);
+    height: 25vh;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .main_nav {
+    list-style-type: none;
+    display: none;
+    position: fixed;
+    top: 10px;
+    right: 55px;
+  }
+
+  .nav_links {
+    font-size: 15px;
+    background-color: rgba(212, 208, 208, 0.2);
+    border: 5px solid rgba(114, 78, 78, 0.2);
+    border-radius: 10em;
+  }
+
+  .main_nav li {
+    text-align: center;
+    margin: 15px auto;
+  }
+
+  .navbar-toggle {
+    position: fixed;
+    top: 35px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 3em;
+    filter: grayscale(100%);
+    z-index: 3;
+  }
+
+  #chkToggle {
+    display: none;
+  }
+
+  #chkToggle:checked + ul.main_nav {
+    display: block;
+  }
+
+  .fila_valorados {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    animation: slide 15s linear infinite;
+    filter: blur(3px);
+    overflow: hidden;
+    max-height: 100px;
+  }
+
+  .fila_valorados img {
+    margin-right: 60px;
+    object-fit: cover;
+    max-width: 90px;
+  }
+
+  @keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  .premium {
+    background-color: rgba(212, 208, 208, 0.493);
+    font-size: 20px;
+    z-index: 2;
+    position: relative;
+    margin: 10px auto;
+    text-align: center;
+  }
+
+  .premium_container {
+    color: rgb(202, 11, 11);
+    background-color: rgba(212, 208, 208, 0.493);
+    text-transform: uppercase;
+    font-style: oblique;
+    font-weight: bolder;
+    width: 400px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%);
+  }
+
+  .cuadrado_main {
+    display: flex;
+    margin: 10px auto 20px auto;
+    background: rgba(0, 0, 0, 0.5);
+    border: 2px solid rgb(82, 79, 78);
+    padding: 5px;
+    text-align: center;
+  }
+
+  .cuadrado_sobrenosotros {
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .titulo_heavys_zona {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    color: rgb(175, 179, 179);
+    font-size: 25px;
+    margin: 0;
+    bottom: 540px;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: rgba(105, 103, 103, 0.651);
+    white-space: nowrap;
+  }
+
+  .cuadrado_descripcion_escoge {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 1px;
+    margin-bottom: 40px;
+    margin-top: 35px;
+  }
+
+  .fotos_heavys > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 2px solid rgb(82, 79, 78);
+    position: relative;
+  }
+
+  .texto_oculto {
+    display: none;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    align-items: center;
+  }
+
+  button {
+    margin: 42vw auto auto 6vw;
+    color: rgb(255, 255, 255);
+    background-color: rgb(109, 204, 54);
+    text-align: center;
+    padding: 5px 10px;
+    font-size: 15px;
+    cursor: pointer;
+    display: inline-block;
+    position: fixed;
+  }
+
+  h2 {
+    margin: 5vw auto auto 5vw;
+    color: rgb(255, 255, 255);
+    background-color: rgba(105, 103, 103, 0.651);
+    text-align: center;
+    position: fixed;
+  }
+
+  h3 {
+    margin: 30vw auto auto 5vw;
+    color: rgb(255, 255, 255);
+    background-color: rgba(105, 103, 103, 0.651);
+    position: fixed;
+  }
+
+  .fotos_heavys:hover > .texto_oculto {
+    display: grid;
+    filter: brightness(60%);
+    z-index: 1;
+    opacity: 1;
+    grid-template-columns: 10vh;
+    grid-template-rows: 1fr;
+    padding: 10px;
+    border-radius: 30%;
+  }
+
+  .rrss_image {
+    width: 40%;
+    filter: contrast(70%);
+  }
+
+  .nosotros {
+    border: 2px solid rgb(82, 79, 78);
+  }
+
+  .filosofia {
+    border: 2px solid rgb(82, 79, 78);
+  }
+
+  .titulo_nosotros {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .rrss_container {
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    grid-row-gap: 1rem;
+    grid-column-gap: 1rem;
+    border: 2px solid rgb(82, 79, 78);
+    margin: 0 auto;
+  }
+
+  .rrss_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto auto 10px auto;
+  }
+
+  cite {
+    font-size: 15px;
+  }
+
+  .anuncios {
+    justify-content: center;
+    display: flex;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  .contenedor_anuncios2 {
+    display: none;
+  }
+
+  .copyright {
+    margin: 10px 50px auto 60px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  * {
+    color: rgb(218, 215, 211);
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    padding: 0;
+  }
+
+  body {
+    background-image: url(https://brobible.com/wp-content/uploads/2021/03/heavy-metal-concert.jpg?resize=768,512);
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+  .logo_1 {
+    width: 100%;
+    justify-content: center;
+    display: grid;
+    filter: grayscale(100%);
+    border: 10px solid rgba(102, 98, 98, 0.2);
+    border-radius: 50em;
+    filter: opacity(90%);
+    height: 20vh;
+  }
+
+  .main_nav {
+    list-style-type: none;
+    display: none;
+    position: fixed;
+    top: 10px;
+    right: 55px;
+  }
+
+  .nav_links {
+    font-size: 15px;
+    background-color: rgba(212, 208, 208, 0.2);
+    border: 5px solid rgba(114, 78, 78, 0.2);
+    border-radius: 10em;
+  }
+
+  .main_nav li {
+    text-align: center;
+    margin: 15px auto;
+  }
+
+  .navbar-toggle {
+    position: fixed;
+    top: 35px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 3em;
+    filter: grayscale(100%);
+    z-index: 3;
+  }
+
+  #chkToggle {
+    display: none;
+  }
+
+  #chkToggle:checked + ul.main_nav {
+    display: block;
+  }
+
+  .fila_valorados {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    animation: slide 15s linear infinite;
+    filter: blur(3px);
+    overflow: hidden;
+    max-height: 100px;
+  }
+
+  .fila_valorados img {
+    margin-right: 60px;
+    object-fit: cover;
+    max-width: 90px;
+  }
+
+  @keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  .premium {
+    background-color: rgba(212, 208, 208, 0.493);
+    font-size: 20px;
+    z-index: 2;
+    position: relative;
+    margin: 10px auto;
+    text-align: center;
+  }
+
+  .premium_container {
+    color: rgb(202, 11, 11);
+    background-color: rgba(212, 208, 208, 0.493);
+    text-transform: uppercase;
+    font-style: oblique;
+    font-weight: bolder;
+    width: 400px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%);
+  }
+
+  .cuadrado_main {
+    display: flex;
+    margin: 10px auto 20px auto;
+    background: rgba(0, 0, 0, 0.5);
+    border: 2px solid rgb(82, 79, 78);
+    padding: 5px;
+    text-align: center;
+  }
+
+  .cuadrado_sobrenosotros {
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .titulo_heavys_zona {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    color: rgb(175, 179, 179);
+    font-size: 25px;
+    margin: 0;
+    bottom: 578px;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: rgba(105, 103, 103, 0.651);
+    white-space: nowrap;
+  }
+
+  .cuadrado_descripcion_escoge {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 1px;
+    margin-bottom: 40px;
+    margin-top: 35px;
+  }
+
+  .fotos_heavys > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 2px solid rgb(82, 79, 78);
+    position: relative;
+  }
+
+  .texto_oculto {
+    display: none;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    align-items: center;
+  }
+
+  button {
+    margin: 42vw auto auto 6vw;
+    color: rgb(255, 255, 255);
+    background-color: rgb(109, 204, 54);
+    text-align: center;
+    padding: 5px 10px;
+    font-size: 15px;
+    cursor: pointer;
+    display: inline-block;
+    position: fixed;
+  }
+
+  h2 {
+    margin: 5vw auto auto 5vw;
+    color: rgb(255, 255, 255);
+    background-color: rgba(105, 103, 103, 0.651);
+    text-align: center;
+    position: fixed;
+  }
+
+  h3 {
+    margin: 30vw auto auto 5vw;
+    color: rgb(255, 255, 255);
+    background-color: rgba(105, 103, 103, 0.651);
+    position: fixed;
+  }
+
+  .fotos_heavys:hover > .texto_oculto {
+    display: grid;
+    filter: brightness(60%);
+    z-index: 1;
+    opacity: 1;
+    grid-template-columns: 10vh;
+    grid-template-rows: 1fr;
+    padding: 10px;
+    border-radius: 30%;
+  }
+
+  .rrss_image {
+    width: 40%;
+    filter: contrast(70%);
+  }
+
+  .nosotros {
+    border: 2px solid rgb(82, 79, 78);
+  }
+
+  .filosofia {
+    border: 2px solid rgb(82, 79, 78);
+  }
+
+  .titulo_nosotros {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .rrss_container {
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    grid-row-gap: 1rem;
+    grid-column-gap: 1rem;
+    border: 2px solid rgb(82, 79, 78);
+    margin: 0 auto;
+  }
+
+  .rrss_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto auto 10px auto;
+  }
+
+  cite {
+    font-size: 15px;
+  }
+
+  .anuncios {
+    justify-content: center;
+    display: flex;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+  }
+
   .copyright {
     margin: 10px 50px auto 60px;
     text-align: center;
