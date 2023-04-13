@@ -131,14 +131,16 @@ body {
 }
 
 .titulo_heavys_zona {
-  margin: 0;
+  display: block;
   position: absolute;
-  top: 300px;
-  display: flex;
-  border: 2px solid rgba(82, 79, 78, 0.363);
-  background-color: rgba(143, 139, 138, 0.253);
+  z-index: 1;
   color: rgb(175, 179, 179);
-  z-index: 3;
+  font-size: 25px;
+  margin: 0;
+  bottom: 578px;
+  left: 50%;
+  transform: translate(-50%); 
+  background-color: rgba(105, 103, 103, 0.651);
   white-space: nowrap;
 }
 
@@ -256,39 +258,266 @@ cite {
   text-align: center;
 }
 
-/*@media screen and (max-width: 300px) {
-  .anuncios {
-    flex-wrap: wrap;
-    height: auto;
+/* MEDIA QUERY */
+
+@media screen and (min-width: 1921px) {}
+@media screen and (min-width: 1441px) and (max-width: 1920px) {}
+@media screen and (min-width: 1025px) and (max-width: 1440px) {}
+@media screen and (min-width: 721px) and (max-width: 1024px) {}
+@media screen and (max-width: 720px) {
+  * {
+    color: rgb(218, 215, 211);
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    padding: 0;
   }
-}
-
-
-@media screen and (max-width: 640px) {
+  
+  body {
+    background-image: url(https://brobible.com/wp-content/uploads/2021/03/heavy-metal-concert.jpg?resize=768,512);
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  
   .logo_1 {
-    width: 90%;
-    margin: -19% auto -7% auto; modificar margin sin porcentages
-    clip-path: inset(36% 6% 15% 6%);
-    border: 25px solid rgba(102, 98, 98, 0.2);
-    border-radius: 60em;
+    width: 100%;
+    justify-content: center;
+    display: grid;
+    filter: grayscale(100%);
+    border: 10px solid rgba(102, 98, 98, 0.2);
+    border-radius: 50em;
+    filter:opacity(90%);
+    height: 20vh;
   }
-
+  
   .main_nav {
-    flex-wrap: wrap;
-    gap: 10px;
+    list-style-type: none;
+    display: none;
+    position: fixed;
+    top: 10px;
+    right: 55px;
   }
   
   .nav_links {
-  margin: 2% auto;   modificar margin sin porcentages
+    font-size: 15px;
+    background-color: rgba(212, 208, 208, 0.2);
+    border: 5px solid rgba(114, 78, 78, 0.2);
+    border-radius: 10em;
+  }
+  
+  .main_nav li {
+    text-align: center;
+    margin: 15px auto;
+  }
+  
+  .navbar-toggle {
+    position: fixed;
+    top: 35px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 3em;
+    filter: grayscale(100%);
+    z-index: 3;
+  }
+  
+  #chkToggle {
+    display: none;
+  }
+  
+  #chkToggle:checked+ul.main_nav {
+    display: block;
+  }
+  
+  .fila_valorados {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    animation: slide 15s linear infinite; 
+    filter: blur(3px);
+    overflow: hidden;
+    max-height: 100px;
+  }
+  
+  .fila_valorados img {
+    margin-right: 60px;
+    object-fit: cover;
+    max-width: 90px;
+  }
+  
+  @keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .premium {
+    background-color: rgba(212, 208, 208, 0.493);
+    font-size: 20px;
+    z-index: 2;
+    position: relative;
+    margin: 10px auto;
+    text-align: center;
+  }
+  
+  .premium_container {
+    color: rgb(202, 11, 11);
+    background-color: rgba(212, 208, 208, 0.493);
+    text-transform: uppercase;
+    font-style: oblique;
+    font-weight: bolder;
+    width: 400px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%);
+  }
+  
+  .cuadrado_main {
+    display: flex;
+    margin: 10px auto 20px auto;
+    background: rgba(0, 0, 0, 0.5);
+    border: 2px solid rgb(82, 79, 78);
+    padding: 5px;
+    text-align: center;
+  }
+  
+  .cuadrado_sobrenosotros {
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;  
+    text-align: center;
+    padding: 15px;
+  }
+  
+  .titulo_heavys_zona {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    color: rgb(175, 179, 179);
+    font-size: 25px;
+    margin: 0;
+    bottom: 578px;
+    left: 50%;
+    transform: translate(-50%); 
+    background-color: rgba(105, 103, 103, 0.651);
+    white-space: nowrap;
+  }
+  
+  .cuadrado_descripcion_escoge {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 1px;
+    margin-bottom: 40px;
+    margin-top: 35px;
+  }
+  
+  .fotos_heavys > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 2px solid rgb(82, 79, 78);
+    position: relative;
+  }
+  
+  .texto_oculto {
+    display: none;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    align-items: center;
+  }
+  
+  button {
+    margin: 42vw auto auto 6vw;
+    color: rgb(255, 255, 255);
+    background-color: rgb(109, 204, 54);
+    text-align: center;
+    padding: 5px 10px;
+    font-size: 15px;
+    cursor: pointer;
+    display: inline-block;
+    position: fixed;
+  }
+  
+  h2 {
+    margin: 5vw auto auto 5vw;
+    color: rgb(255, 255, 255);
+    background-color: rgba(105, 103, 103, 0.651);
+    text-align: center;
+    position: fixed;
+  }
+  
+  h3 {
+    margin: 30vw auto auto 5vw;
+    color: rgb(255, 255, 255);
+    background-color: rgba(105, 103, 103, 0.651);
+    position: fixed;
+  }
+  
+  .fotos_heavys:hover > .texto_oculto {
+    display: grid;
+    filter: brightness(60%);
+    z-index: 1;
+    opacity: 1;
+    grid-template-columns: 10vh;
+    grid-template-rows: 1fr;
     padding: 10px;
-    border: 2px solid rgba(105, 99, 99, 0.2);
-  } 
-
-@media (min-width: 768px) and (max-width: 1024px) {
-Estilos para pantallas de 768 a 1024 píxeles de ancho 
-} 
-
-@media (min-width: 1025px) {
-Estilos para pantallas de más de 1024 píxeles de ancho
+    border-radius: 30%;
+  }
+  
+  .rrss_image {
+    width: 40%;
+    filter:contrast(70%);
+  }
+  
+  .nosotros{
+    border: 2px solid rgb(82, 79, 78);
+  }
+  
+  .filosofia {
+    border: 2px solid rgb(82, 79, 78);
+  }
+  
+  .titulo_nosotros {
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  .rrss_container {
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    grid-row-gap: 1rem;
+    grid-column-gap: 1rem;
+    border: 2px solid rgb(82, 79, 78);
+    margin: 0 auto;
+  }
+  
+  .rrss_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto auto 10px auto;
+  }
+  
+  cite {
+    font-size: 15px;
+  }
+  
+  .anuncios { 
+    justify-content: center;
+    display: flex;
+    position: relative; 
+    left: 50%;
+    transform: translate(-50%); 
+  }
+  
+  .copyright {
+    margin: 10px 50px auto 60px;
+    text-align: center;
+  }
 }
- } */
