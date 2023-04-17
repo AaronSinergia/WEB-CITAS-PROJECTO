@@ -275,38 +275,40 @@ cite {
     background-size: cover;
   }
 
+  .logo_mas_menu {
+    display: grid;
+    position: relative;
+    grid-template-columns: 40% 60%;
+    align-items: center;
+  }
+
   .logo_1 {
+    display: block;
+    position: relative;
+    max-width: 90%;
+    height: auto;
+  }
+
+  .menu_grande li {
+    margin: 20px;
+    font-size: 2vh;
+  }
+
+  .menu_grande {
     display: flex;
-    filter: grayscale(100%);
-    border: 10px solid rgba(102, 98, 98, 0.2);
-    border-radius: 50em;
-    filter: opacity(90%);
-    height: 25vh;
-    max-width: 50%;
-    margin: 0 auto auto 0;
-  }
-
-  .main_nav {
+    position: relative;
+    cursor: pointer;
     list-style-type: none;
-    display: none;
-    position: fixed;
-    top: 10px;
-    right: 55px;
-  }
-
-  .nav_links {
-    font-size: 15px;
-    background-color: rgba(212, 208, 208, 0.2);
-    border: 5px solid rgba(114, 78, 78, 0.2);
-    border-radius: 10em;
-  }
-
-  .main_nav li {
-    text-align: center;
-    margin: 15px auto;
+    background-color: rgba(102, 98, 98, 0.2);
+    border: 1px solid rgba(116, 113, 113, 0.2);
+    max-width: 90%;
+    border-right: 1px solid rgba(116, 113, 113, 0.2);
+    justify-content: center;
+    white-space: nowrap;
   }
 
   .navbar-toggle {
+    display: none;
     position: fixed;
     top: 35px;
     right: 10px;
@@ -314,14 +316,6 @@ cite {
     font-size: 3em;
     filter: grayscale(100%);
     z-index: 3;
-  }
-
-  #chkToggle {
-    display: none;
-  }
-
-  #chkToggle:checked + ul.main_nav {
-    display: block;
   }
 
   .fila_valorados {
@@ -333,6 +327,8 @@ cite {
     overflow: hidden;
     max-height: 200px;
     top: 20px;
+    left: 50%;
+    transform: translate(-50%);
   }
 
   .fila_valorados img {
@@ -367,7 +363,7 @@ cite {
     font-weight: bolder;
     width: 400px;
     position: absolute;
-    top: 40px;
+    top: 50px;
     left: 50%;
     transform: translate(-50%);
   }
@@ -392,13 +388,13 @@ cite {
   }
 
   .titulo_heavys_zona {
-    display: block;
+    display: flex;
     position: absolute;
     z-index: 1;
     color: rgb(175, 179, 179);
     font-size: 25px;
-    margin: 0;
-    bottom: 460px;
+    margin: 30px 10px 0 1px;
+    bottom: auto;
     left: 50%;
     transform: translate(-50%);
     background-color: rgba(105, 103, 103, 0.651);
@@ -407,14 +403,11 @@ cite {
 
   .cuadrado_descripcion_escoge {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding: 1px;
-    width: 60%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    width: 100%;
     padding: 40px;
     margin-top: 5px;
     margin-bottom: 1px;
-    margin-left: auto;
-    margin-right: auto;
   }
 
   .fotos_heavys > img {
@@ -422,7 +415,6 @@ cite {
     height: 100%;
     object-fit: cover;
     border: 2px solid rgb(82, 79, 78);
-    position: relative;
   }
 
   .texto_oculto {
@@ -510,22 +502,6 @@ cite {
     font-size: 15px;
   }
 
-  .contenedor_anuncios {
-    display: none;
-  }
-
-  .img1 {
-    position: fixed;
-    bottom: 250px;
-    left: 20px;
-  }
-
-  .img2 {
-    position: fixed;
-    bottom: 250px;
-    right: 20px;
-  }
-
   .copyright {
     margin: auto 50px auto 60px;
     text-align: center;
@@ -599,6 +575,8 @@ cite {
     overflow: hidden;
     max-height: 200px;
     top: 20px;
+    left: 50%;
+    transform: translate(-50%);
   }
 
   .fila_valorados img {
@@ -776,22 +754,6 @@ cite {
     font-size: 15px;
   }
 
-  /* .contenedor_anuncios {
-    display: none;
-  } */
-/* 
-  .img1 {
-    position: fixed;
-    bottom: 250px;
-    left: 20px;
-  }
-
-  .img2 {
-    position: fixed;
-    bottom: 250px;
-    right: 20px;
-  } */
-
   .copyright {
     margin: auto 50px auto 60px;
     text-align: center;
@@ -875,6 +837,8 @@ cite {
     filter: blur(3px);
     overflow: hidden;
     max-height: 100px;
+    left: 50%;
+    transform: translate(-50%);
   }
 
   .fila_valorados img {
@@ -1144,6 +1108,8 @@ cite {
     filter: blur(3px);
     overflow: hidden;
     max-height: 100px;
+    left: 50%;
+    transform: translate(-50%);
   }
 
   .fila_valorados img {
@@ -1411,6 +1377,8 @@ cite {
     filter: blur(3px);
     overflow: hidden;
     max-height: 100px;
+    left: 50%;
+    transform: translate(-50%);
   }
 
   .fila_valorados img {
@@ -1677,6 +1645,8 @@ cite {
     filter: blur(3px);
     overflow: hidden;
     max-height: 100px;
+    left: 50%;
+    transform: translate(-50%);
   }
 
   .fila_valorados img {
