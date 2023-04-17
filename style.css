@@ -12,10 +12,6 @@ body {
   background-size: cover;
 }
 
-/* header {
-  width: 60%;
-} ---> ESTO TE PUEDE IR BIEN CUANDO LO QUIERAS ESCALAR A FORMATO PC*/
-
 .logo_1 {
   width: 100%;
   justify-content: center;
@@ -30,7 +26,8 @@ body {
 .main_nav {
   list-style-type: none;
   display: none;
-  position: fixed;
+  position: relative;
+  z-index: 2;
   top: 10px;
   right: 55px;
 }
@@ -502,6 +499,14 @@ cite {
     font-size: 15px;
   }
 
+  .anuncios {
+    justify-content: center;
+    display: flex;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+  }
+
   .copyright {
     margin: auto 50px auto 60px;
     text-align: center;
@@ -754,6 +759,14 @@ cite {
     font-size: 15px;
   }
 
+  .anuncios {
+    justify-content: center;
+    display: flex;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+  }
+
   .copyright {
     margin: auto 50px auto 60px;
     text-align: center;
@@ -795,6 +808,7 @@ cite {
     list-style-type: none;
     display: none;
     position: fixed;
+    z-index: 2;
     top: 10px;
     right: 55px;
   }
@@ -1021,8 +1035,12 @@ cite {
     transform: translate(-50%);
   }
 
-  .contenedor_anuncios2 {
-    display: none;
+  .anuncios {
+    justify-content: center;
+    display: flex;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
   }
 
   .copyright {
@@ -1066,6 +1084,7 @@ cite {
     list-style-type: none;
     display: none;
     position: fixed;
+    z-index: 2;
     top: 10px;
     right: 55px;
   }
@@ -1290,8 +1309,12 @@ cite {
     transform: translate(-50%);
   }
 
-  .contenedor_anuncios2 {
-    display: none;
+  .anuncios {
+    justify-content: center;
+    display: flex;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
   }
 
   .copyright {
@@ -1335,6 +1358,7 @@ cite {
     list-style-type: none;
     display: none;
     position: fixed;
+    z-index: 2;
     top: 10px;
     right: 55px;
   }
@@ -1559,17 +1583,20 @@ cite {
     transform: translate(-50%);
   }
 
-  .contenedor_anuncios2 {
-    display: none;
+  .anuncios {
+    justify-content: center;
+    display: flex;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
   }
-
   .copyright {
     margin: 10px 50px auto 60px;
     text-align: center;
   }
 }
 
-@media screen and (max-width: 500px) { 
+@media screen and (max-width: 500px) {
   * {
     color: rgb(218, 215, 211);
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
@@ -1603,6 +1630,7 @@ cite {
     list-style-type: none;
     display: none;
     position: fixed;
+    z-index: 2;
     top: 10px;
     right: 55px;
   }
@@ -1825,10 +1853,6 @@ cite {
     position: relative;
     left: 50%;
     transform: translate(-50%);
-  }
-
-  .contenedor_anuncios2 {
-    display: none;
   }
 
   .copyright {
