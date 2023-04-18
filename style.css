@@ -1,9 +1,15 @@
 * {
   color: rgb(218, 215, 211);
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   box-sizing: border-box;
   text-decoration: none;
   padding: 0;
+}
+
+:root {
+  --corporative-background-color: rgba(212, 208, 208, 0.2);
+  --premium-container-color: red;
+  --title-and-buttontext-color: rgb(255, 255, 255);
 }
 
 body {
@@ -34,7 +40,7 @@ body {
 
 .nav_links {
   font-size: 15px;
-  background-color: rgba(212, 208, 208, 0.2);
+  background-color: var(--corporative-background-color);
   border: 5px solid rgba(114, 78, 78, 0.2);
   border-radius: 10em;
 }
@@ -88,7 +94,7 @@ body {
 }
 
 .premium {
-  background-color: rgba(212, 208, 208, 0.493);
+  background-color: var(--corporative-background-color);
   font-size: 20px;
   z-index: 2;
   position: relative;
@@ -97,8 +103,8 @@ body {
 }
 
 .premium_container {
-  color: rgb(202, 11, 11);
-  background-color: rgba(212, 208, 208, 0.493);
+  color: var(--premium-container-color);
+  background-color: var(--corporative-background-color);
   text-transform: uppercase;
   font-style: oblique;
   font-weight: bolder;
@@ -112,7 +118,7 @@ body {
 .cuadrado_main {
   display: flex;
   margin: 10px auto 20px auto;
-  background: rgba(0, 0, 0, 0.5);
+  background-color: var(--corporative-background-color);
   border: 2px solid rgb(82, 79, 78);
   padding: 5px;
   text-align: center;
@@ -131,13 +137,13 @@ body {
   display: block;
   position: absolute;
   z-index: 1;
-  color: rgb(175, 179, 179);
+  color: var(--title-and-buttontext-color);
   font-size: 25px;
   margin: 0;
   bottom: 578px;
   left: 50%;
   transform: translate(-50%);
-  background-color: rgba(105, 103, 103, 0.651);
+  background-color: var(--corporative-background-color);
   white-space: nowrap;
 }
 
@@ -167,7 +173,7 @@ body {
 
 button {
   margin: 42vw auto auto 6vw;
-  color: rgb(255, 255, 255);
+  color: var(--title-and-buttontext-color);
   background-color: rgb(109, 204, 54);
   text-align: center;
   padding: 5px 10px;
@@ -179,16 +185,16 @@ button {
 
 h2 {
   margin: 5vw auto auto 5vw;
-  color: rgb(255, 255, 255);
-  background-color: rgba(105, 103, 103, 0.651);
+  color: var(--title-and-buttontext-color);
+  background-color: var(--corporative-background-color);
   text-align: center;
   position: fixed;
 }
 
 h3 {
   margin: 30vw auto auto 5vw;
-  color: rgb(255, 255, 255);
-  background-color: rgba(105, 103, 103, 0.651);
+  color: var(--title-and-buttontext-color);
+  background-color: var(--corporative-background-color);
   position: fixed;
 }
 
@@ -260,7 +266,7 @@ cite {
 @media screen and (min-width: 1191px) and (max-width: 2500px) {
   * {
     color: rgb(218, 215, 211);
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     box-sizing: border-box;
     text-decoration: none;
     padding: 0;
@@ -296,7 +302,7 @@ cite {
     position: relative;
     cursor: pointer;
     list-style-type: none;
-    background-color: rgba(102, 98, 98, 0.2);
+    background-color: var(--corporative-background-color);
     border: 1px solid rgba(116, 113, 113, 0.2);
     max-width: 90%;
     border-right: 1px solid rgba(116, 113, 113, 0.2);
@@ -344,7 +350,7 @@ cite {
   }
 
   .premium {
-    background-color: rgba(212, 208, 208, 0.493);
+    background-color: var(--corporative-background-color);
     font-size: 20px;
     z-index: 2;
     position: relative;
@@ -353,8 +359,8 @@ cite {
   }
 
   .premium_container {
-    color: rgb(202, 11, 11);
-    background-color: rgba(212, 208, 208, 0.493);
+    color: var(--premium-container-color);
+    background-color: var(--corporative-background-color);
     text-transform: uppercase;
     font-style: oblique;
     font-weight: bolder;
@@ -368,7 +374,7 @@ cite {
   .cuadrado_main {
     display: flex;
     margin: 90px auto 20px auto;
-    background: rgba(0, 0, 0, 0.5);
+    background-color: var(--corporative-background-color);
     border: 2px solid rgb(82, 79, 78);
     padding: 5px;
     text-align: center;
@@ -388,13 +394,13 @@ cite {
     display: flex;
     position: absolute;
     z-index: 1;
-    color: rgb(175, 179, 179);
+    color: var(--title-and-buttontext-color);
     font-size: 25px;
     margin: 30px 10px 0 1px;
     bottom: auto;
     left: 50%;
     transform: translate(-50%);
-    background-color: rgba(105, 103, 103, 0.651);
+    background-color: var(--corporative-background-color);
     white-space: nowrap;
   }
 
@@ -424,7 +430,7 @@ cite {
 
   button {
     margin: 26vw auto auto 1vw;
-    color: rgb(255, 255, 255);
+    color: var(--title-and-buttontext-color);
     background-color: rgb(109, 204, 54);
     text-align: center;
     padding: 5px 10px;
@@ -436,16 +442,16 @@ cite {
 
   h2 {
     margin: 2vw auto auto 3vw;
-    color: rgb(255, 255, 255);
-    background-color: rgba(105, 103, 103, 0.651);
+    color: var(--title-and-buttontext-color);
+    background-color: var(--corporative-background-color);
     text-align: center;
     position: fixed;
   }
 
   h3 {
     margin: 17vw auto auto 1vw;
-    color: rgb(255, 255, 255);
-    background-color: rgba(105, 103, 103, 0.651);
+    color: var(--title-and-buttontext-color);
+    background-color: var(--corporative-background-color);
     position: fixed;
   }
 
@@ -516,7 +522,7 @@ cite {
 @media screen and (min-width: 871px) and (max-width: 1190px) {
   * {
     color: rgb(218, 215, 211);
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     box-sizing: border-box;
     text-decoration: none;
     padding: 0;
@@ -552,7 +558,7 @@ cite {
     position: relative;
     cursor: pointer;
     list-style-type: none;
-    background-color: rgba(102, 98, 98, 0.2);
+    background-color: var(--corporative-background-color);
     border: 1px solid rgba(116, 113, 113, 0.2);
     max-width: 90%;
     border-right: 1px solid rgba(116, 113, 113, 0.2);
@@ -600,7 +606,7 @@ cite {
   }
 
   .premium {
-    background-color: rgba(212, 208, 208, 0.493);
+    background-color: var(--corporative-background-color);
     font-size: 20px;
     z-index: 2;
     position: relative;
@@ -609,8 +615,8 @@ cite {
   }
 
   .premium_container {
-    color: rgb(202, 11, 11);
-    background-color: rgba(212, 208, 208, 0.493);
+    color: var(--premium-container-color);
+    background-color: var(--corporative-background-color);
     text-transform: uppercase;
     font-style: oblique;
     font-weight: bolder;
@@ -624,7 +630,7 @@ cite {
   .cuadrado_main {
     display: flex;
     margin: 90px auto 20px auto;
-    background: rgba(0, 0, 0, 0.5);
+    background-color: var(--corporative-background-color);
     border: 2px solid rgb(82, 79, 78);
     padding: 5px;
     text-align: center;
@@ -644,13 +650,13 @@ cite {
     display: flex;
     position: absolute;
     z-index: 1;
-    color: rgb(175, 179, 179);
+    color: var(--title-and-buttontext-color);
     font-size: 25px;
     margin: 30px 10px 0 1px;
     bottom: auto;
     left: 50%;
     transform: translate(-50%);
-    background-color: rgba(105, 103, 103, 0.651);
+    background-color: var(--corporative-background-color);
     white-space: nowrap;
   }
 
@@ -684,7 +690,7 @@ cite {
 
   button {
     margin: 26vw auto auto 1vw;
-    color: rgb(255, 255, 255);
+    color: var(--title-and-buttontext-color);
     background-color: rgb(109, 204, 54);
     text-align: center;
     padding: 5px 10px;
@@ -696,16 +702,16 @@ cite {
 
   h2 {
     margin: 2vw auto auto 3vw;
-    color: rgb(255, 255, 255);
-    background-color: rgba(105, 103, 103, 0.651);
+    color: var(--title-and-buttontext-color);
+    background-color: var(--corporative-background-color);
     text-align: center;
     position: fixed;
   }
 
   h3 {
     margin: 17vw auto auto 1vw;
-    color: rgb(255, 255, 255);
-    background-color: rgba(105, 103, 103, 0.651);
+    color: var(--title-and-buttontext-color);
+    background-color: var(--corporative-background-color);
     position: fixed;
   }
 
@@ -776,7 +782,7 @@ cite {
 @media screen and (min-width: 721px) and (max-width: 870px) {
   * {
     color: rgb(218, 215, 211);
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     box-sizing: border-box;
     text-decoration: none;
     padding: 0;
@@ -815,7 +821,7 @@ cite {
 
   .nav_links {
     font-size: 15px;
-    background-color: rgba(212, 208, 208, 0.2);
+    background-color: var(--corporative-background-color);
     border: 5px solid rgba(114, 78, 78, 0.2);
     border-radius: 10em;
   }
@@ -871,7 +877,7 @@ cite {
   }
 
   .premium {
-    background-color: rgba(212, 208, 208, 0.493);
+    background-color: var(--corporative-background-color);
     font-size: 20px;
     z-index: 2;
     position: relative;
@@ -880,8 +886,8 @@ cite {
   }
 
   .premium_container {
-    color: rgb(202, 11, 11);
-    background-color: rgba(212, 208, 208, 0.493);
+    color: var(--premium-container-color);
+    background-color: var(--corporative-background-color);
     text-transform: uppercase;
     font-style: oblique;
     font-weight: bolder;
@@ -895,7 +901,7 @@ cite {
   .cuadrado_main {
     display: flex;
     margin: 10px auto 20px auto;
-    background: rgba(0, 0, 0, 0.5);
+    background-color: var(--corporative-background-color);
     border: 2px solid rgb(82, 79, 78);
     padding: 5px;
     text-align: center;
@@ -915,13 +921,13 @@ cite {
     display: block;
     position: absolute;
     z-index: 1;
-    color: rgb(175, 179, 179);
+    color: var(--title-and-buttontext-color);
     font-size: 25px;
     margin: 0;
     bottom: 540px;
     left: 50%;
     transform: translate(-50%);
-    background-color: rgba(105, 103, 103, 0.651);
+    background-color: var(--corporative-background-color);
     white-space: nowrap;
   }
 
@@ -952,7 +958,7 @@ cite {
 
   button {
     margin: 58vw auto auto 2vw;
-    color: rgb(255, 255, 255);
+    color: var(--title-and-buttontext-color);
     background-color: rgb(109, 204, 54);
     text-align: center;
     padding: 5px 10px;
@@ -964,16 +970,16 @@ cite {
 
   h2 {
     margin: 5vw auto auto 7vw;
-    color: rgb(255, 255, 255);
-    background-color: rgba(105, 103, 103, 0.651);
+    color: var(--title-and-buttontext-color);
+    background-color: var(--corporative-background-color);
     text-align: center;
     position: fixed;
   }
 
   h3 {
     margin: 35vw auto auto 1vw;
-    color: rgb(255, 255, 255);
-    background-color: rgba(105, 103, 103, 0.651);
+    color: var(--title-and-buttontext-color);
+    background-color: var(--corporative-background-color);
     position: fixed;
   }
 
@@ -1052,7 +1058,7 @@ cite {
 @media screen and (min-width: 601px) and (max-width: 720px) {
   * {
     color: rgb(218, 215, 211);
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     box-sizing: border-box;
     text-decoration: none;
     padding: 0;
@@ -1091,7 +1097,7 @@ cite {
 
   .nav_links {
     font-size: 15px;
-    background-color: rgba(212, 208, 208, 0.2);
+    background-color: var(--corporative-background-color);
     border: 5px solid rgba(114, 78, 78, 0.2);
     border-radius: 10em;
   }
@@ -1147,7 +1153,7 @@ cite {
   }
 
   .premium {
-    background-color: rgba(212, 208, 208, 0.493);
+    background-color: var(--corporative-background-color);
     font-size: 20px;
     z-index: 2;
     position: relative;
@@ -1156,8 +1162,8 @@ cite {
   }
 
   .premium_container {
-    color: rgb(202, 11, 11);
-    background-color: rgba(212, 208, 208, 0.493);
+    color: var(--premium-container-color);
+    background-color: var(--corporative-background-color);
     text-transform: uppercase;
     font-style: oblique;
     font-weight: bolder;
@@ -1171,7 +1177,7 @@ cite {
   .cuadrado_main {
     display: flex;
     margin: 10px auto 20px auto;
-    background: rgba(0, 0, 0, 0.5);
+    background-color: var(--corporative-background-color);
     border: 2px solid rgb(82, 79, 78);
     padding: 5px;
     text-align: center;
@@ -1190,13 +1196,13 @@ cite {
     display: block;
     position: absolute;
     z-index: 1;
-    color: rgb(175, 179, 179);
+    color: var(--title-and-buttontext-color);
     font-size: 25px;
     margin: 0;
     bottom: 540px;
     left: 50%;
     transform: translate(-50%);
-    background-color: rgba(105, 103, 103, 0.651);
+    background-color: var(--corporative-background-color);
     white-space: nowrap;
   }
 
@@ -1226,7 +1232,7 @@ cite {
 
   button {
     margin: 42vw auto auto 6vw;
-    color: rgb(255, 255, 255);
+    color: var(--title-and-buttontext-color);
     background-color: rgb(109, 204, 54);
     text-align: center;
     padding: 5px 10px;
@@ -1238,16 +1244,16 @@ cite {
 
   h2 {
     margin: 5vw auto auto 5vw;
-    color: rgb(255, 255, 255);
-    background-color: rgba(105, 103, 103, 0.651);
+    color: var(--title-and-buttontext-color);
+    background-color: var(--corporative-background-color);
     text-align: center;
     position: fixed;
   }
 
   h3 {
     margin: 30vw auto auto 5vw;
-    color: rgb(255, 255, 255);
-    background-color: rgba(105, 103, 103, 0.651);
+    color: var(--title-and-buttontext-color);
+    background-color: var(--corporative-background-color);
     position: fixed;
   }
 
@@ -1326,7 +1332,7 @@ cite {
 @media screen and (min-width: 501px) and (max-width: 600px) {
   * {
     color: rgb(218, 215, 211);
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     box-sizing: border-box;
     text-decoration: none;
     padding: 0;
@@ -1365,7 +1371,7 @@ cite {
 
   .nav_links {
     font-size: 15px;
-    background-color: rgba(212, 208, 208, 0.2);
+    background-color: var(--corporative-background-color);
     border: 5px solid rgba(114, 78, 78, 0.2);
     border-radius: 10em;
   }
@@ -1421,7 +1427,7 @@ cite {
   }
 
   .premium {
-    background-color: rgba(212, 208, 208, 0.493);
+    background-color: var(--corporative-background-color);
     font-size: 20px;
     z-index: 2;
     position: relative;
@@ -1430,8 +1436,8 @@ cite {
   }
 
   .premium_container {
-    color: rgb(202, 11, 11);
-    background-color: rgba(212, 208, 208, 0.493);
+    color: var(--premium-container-color);
+    background-color: var(--corporative-background-color);
     text-transform: uppercase;
     font-style: oblique;
     font-weight: bolder;
@@ -1445,7 +1451,7 @@ cite {
   .cuadrado_main {
     display: flex;
     margin: 10px auto 20px auto;
-    background: rgba(0, 0, 0, 0.5);
+    background-color: var(--corporative-background-color);
     border: 2px solid rgb(82, 79, 78);
     padding: 5px;
     text-align: center;
@@ -1464,13 +1470,13 @@ cite {
     display: block;
     position: absolute;
     z-index: 1;
-    color: rgb(175, 179, 179);
+    color: var(--title-and-buttontext-color);
     font-size: 25px;
     margin: 0;
     bottom: 540px;
     left: 50%;
     transform: translate(-50%);
-    background-color: rgba(105, 103, 103, 0.651);
+    background-color: var(--corporative-background-color);
     white-space: nowrap;
   }
 
@@ -1500,7 +1506,7 @@ cite {
 
   button {
     margin: 42vw auto auto 6vw;
-    color: rgb(255, 255, 255);
+    color: var(--title-and-buttontext-color);
     background-color: rgb(109, 204, 54);
     text-align: center;
     padding: 5px 10px;
@@ -1512,16 +1518,16 @@ cite {
 
   h2 {
     margin: 5vw auto auto 5vw;
-    color: rgb(255, 255, 255);
-    background-color: rgba(105, 103, 103, 0.651);
+    color: var(--title-and-buttontext-color);
+    background-color: var(--corporative-background-color);
     text-align: center;
     position: fixed;
   }
 
   h3 {
     margin: 30vw auto auto 5vw;
-    color: rgb(255, 255, 255);
-    background-color: rgba(105, 103, 103, 0.651);
+    color: var(--title-and-buttontext-color);
+    background-color: var(--corporative-background-color);
     position: fixed;
   }
 
@@ -1599,7 +1605,7 @@ cite {
 @media screen and (max-width: 500px) {
   * {
     color: rgb(218, 215, 211);
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     box-sizing: border-box;
     text-decoration: none;
     padding: 0;
@@ -1637,7 +1643,7 @@ cite {
 
   .nav_links {
     font-size: 15px;
-    background-color: rgba(212, 208, 208, 0.2);
+    background-color: var(--corporative-background-color);
     border: 5px solid rgba(114, 78, 78, 0.2);
     border-radius: 10em;
   }
@@ -1693,7 +1699,7 @@ cite {
   }
 
   .premium {
-    background-color: rgba(212, 208, 208, 0.493);
+    background-color: var(--corporative-background-color);
     font-size: 20px;
     z-index: 2;
     position: relative;
@@ -1702,8 +1708,8 @@ cite {
   }
 
   .premium_container {
-    color: rgb(202, 11, 11);
-    background-color: rgba(212, 208, 208, 0.493);
+    color: var(--premium-container-color);
+    background-color: var(--corporative-background-color);
     text-transform: uppercase;
     font-style: oblique;
     font-weight: bolder;
@@ -1717,7 +1723,7 @@ cite {
   .cuadrado_main {
     display: flex;
     margin: 10px auto 20px auto;
-    background: rgba(0, 0, 0, 0.5);
+    background-color: var(--corporative-background-color);
     border: 2px solid rgb(82, 79, 78);
     padding: 5px;
     text-align: center;
@@ -1736,13 +1742,13 @@ cite {
     display: block;
     position: absolute;
     z-index: 1;
-    color: rgb(175, 179, 179);
+    color: var(--title-and-buttontext-color);
     font-size: 25px;
     margin: 0;
     bottom: 578px;
     left: 50%;
     transform: translate(-50%);
-    background-color: rgba(105, 103, 103, 0.651);
+    background-color: var(--corporative-background-color);
     white-space: nowrap;
   }
 
@@ -1772,7 +1778,7 @@ cite {
 
   button {
     margin: 42vw auto auto 6vw;
-    color: rgb(255, 255, 255);
+    color: var(--title-and-buttontext-color);
     background-color: rgb(109, 204, 54);
     text-align: center;
     padding: 5px 10px;
@@ -1784,16 +1790,16 @@ cite {
 
   h2 {
     margin: 5vw auto auto 5vw;
-    color: rgb(255, 255, 255);
-    background-color: rgba(105, 103, 103, 0.651);
+    color: var(--title-and-buttontext-color);
+    background-color: var(--corporative-background-color);
     text-align: center;
     position: fixed;
   }
 
   h3 {
     margin: 30vw auto auto 5vw;
-    color: rgb(255, 255, 255);
-    background-color: rgba(105, 103, 103, 0.651);
+    color: var(--title-and-buttontext-color);
+    background-color: var(--corporative-background-color);
     position: fixed;
   }
 
