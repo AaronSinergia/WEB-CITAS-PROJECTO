@@ -23,10 +23,10 @@ body {
   justify-content: center;
   display: grid;
   filter: grayscale(100%);
-  border: 10px solid rgba(102, 98, 98, 0.2);
-  border-radius: 50em;
   filter: opacity(90%);
   height: 20vh;
+  border: 10px solid rgba(102, 98, 98, 0.2);
+  border-radius: 50em;
 }
 
 .main_nav {
@@ -35,7 +35,7 @@ body {
   position: relative;
   z-index: 2;
   top: 10px;
-  right: 55px;
+  right: 255px;
 }
 
 .nav_links {
@@ -52,8 +52,8 @@ body {
 
 .navbar-toggle {
   position: fixed;
-  top: 35px;
-  right: 10px;
+  top: 10px;
+  right: 200px;
   cursor: pointer;
   font-size: 3em;
   filter: grayscale(100%);
@@ -1635,10 +1635,19 @@ cite {
   .main_nav {
     list-style-type: none;
     display: none;
-    position: fixed;
+    position: absolute;
     z-index: 2;
-    top: 10px;
-    right: 55px;
+    right: 50px;
+  }
+
+  .navbar-toggle {
+    position: fixed;
+    top: 25px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 3em;
+    filter: grayscale(100%);
+    z-index: 3;
   }
 
   .nav_links {
@@ -1650,17 +1659,7 @@ cite {
 
   .main_nav li {
     text-align: center;
-    margin: 15px auto;
-  }
-
-  .navbar-toggle {
-    position: fixed;
-    top: 35px;
-    right: 10px;
-    cursor: pointer;
-    font-size: 3em;
-    filter: grayscale(100%);
-    z-index: 3;
+    margin: 10px;
   }
 
   #chkToggle {
@@ -1671,16 +1670,8 @@ cite {
     display: block;
   }
 
-  .fila_valorados {
-    position: relative;
-    z-index: 1;
-    display: flex;
-    animation: slide 15s linear infinite;
-    filter: blur(3px);
-    overflow: hidden;
-    max-height: 100px;
-    left: 50%;
-    transform: translate(-50%);
+  .cuadrado_main {
+    margin: 20px;
   }
 
   .fila_valorados img {
@@ -1720,22 +1711,24 @@ cite {
     transform: translate(-50%);
   }
 
-  .cuadrado_main {
-    display: flex;
-    margin: 10px auto 20px auto;
-    background-color: var(--corporative-background-color);
-    border: 2px solid rgb(82, 79, 78);
-    padding: 5px;
-    text-align: center;
-  }
-
   .cuadrado_sobrenosotros {
     display: grid;
     position: relative;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 25%;
     grid-gap: 1em;
     text-align: center;
-    padding: 15px;
+    background-color: var(--corporative-background-color);
+    border: 2px solid rgb(82, 79, 78);
+    padding: 5px;
+  }
+
+  .our_history {
+    margin: 80px;
+  }
+
+  .nosotros {
+    margin: 0;
   }
 
   .titulo_heavys_zona {
@@ -1744,8 +1737,7 @@ cite {
     z-index: 1;
     color: var(--title-and-buttontext-color);
     font-size: 25px;
-    margin: 0;
-    bottom: 578px;
+    bottom: 520px;
     left: 50%;
     transform: translate(-50%);
     background-color: var(--corporative-background-color);
